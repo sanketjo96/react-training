@@ -3,7 +3,13 @@ import Card from './Card'
 import './ExpenseItem.css'
 
 const ExpenseItem = (props) => {
-    const {title, amount, date} = props
+    let {title, amount, date} = props
+
+    const handleClick = () => {
+      // Trying to update title on event
+      console.log('clicked')
+      title = 'sanket'
+    }
 
     return (
         <Card className="expense-item">
@@ -12,6 +18,7 @@ const ExpenseItem = (props) => {
           <h2>{title}</h2>
           <div className="expense-item__price">{amount}</div>
         </div>
+        <button onClick={handleClick}>Test</button>
       </Card>
     );
   }

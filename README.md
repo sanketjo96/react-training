@@ -96,9 +96,14 @@
         ```
         - We can force reuse here by using props.children 
         - We can create Card as a wrapper component and encapsulate required markup within
-        - [props.children]()
+        - [props.children](https://github.com/sanketjo96/react-training/commit/8ff195cea90d84d7fca0dcbf3667b295f299ce76)
 
-3. Styling components
+3. State
+   - Goal 1 - Add button on expense list and try to change title
+   - If you just update the title var inside component nothing will happen
+   - TRY - [Changing title]()
+
+4. Styling components
    - Condition styling
      - Setting styles inline with the help of style object. (not fan of inline styles ??)
      - Apply classes conditionally. Checkout classNames package to do this easily 
