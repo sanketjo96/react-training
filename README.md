@@ -83,11 +83,20 @@
       - In order to make component reusable we need to pass the data to it
       - It should accept any data and render accordingly
       - React allows us to pass the data wih props (component cant just use data stored in other components)
-      - Demo
+      - Demo 1
         - Passing data to ExpenseItem via props
         - Splitting sub component to indicate date
         - Adding a single wrapper as expenses in app.js file
         - [Props and component splitting](https://github.com/sanketjo96/react-training/commit/3d0b72d6f407abd3718ab23afd53875dfb936980)
+      - Demo 2
+        - Note that both expenseItem and expenses share some similar kind of style as below
+        ```
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+        ```
+        - We can force reuse here by using props.children 
+        - We can create Card as a wrapper component and encapsulate required markup within
+        - [props.children]()
 
 3. Styling components
    - Condition styling
