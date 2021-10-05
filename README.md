@@ -63,7 +63,10 @@
       - imports react lib dependency - react-dom
       - Executes a ReactDOM.render with a root component and container to load the application
       - Picks the compiled root component and injects it to the container in DOM
-      - Code - 
+      - Demo
+        - Observe package.json
+        - Bootstrap process 
+        - [Setup](https://github.com/sanketjo96/react-training/commit/55347002986c8241541d2a62d1d8b1f982f4a04a)
     - JSX
       - React focuses on the view where it believes rendering logic and view should go hand in hand. 
       - JSX enables devs to write JS with mark ups with which we can create react elements. 
@@ -72,6 +75,10 @@
         - It makes code clean and much more redable
         - Easy for creating react elements and no need to write lower level apiS
         - Can leverage JS power while constructing the markup
+      - Demo
+        - Adding Expense static item, adding it to app.js
+        - Applying styles
+        - [Simple Component]() 
 
 
 3. Styling components
