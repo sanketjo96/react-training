@@ -86,7 +86,8 @@
       - Demo
         - Passing data to ExpenseItem via props
         - Splitting sub component to indicate date
-        - [Props and component splitting](https://github.com/sanketjo96/react-training/commit/8801b73c76e89fe5fe2a9a9c24d2c0b667beecc2)
+        - Adding a single wrapper as expenses in app.js file
+        - [Props and component splitting](https://github.com/sanketjo96/react-training/commit/3d0b72d6f407abd3718ab23afd53875dfb936980)
 
 3. Styling components
    - Condition styling
