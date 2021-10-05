@@ -99,9 +99,14 @@
         - [props.children](https://github.com/sanketjo96/react-training/commit/8ff195cea90d84d7fca0dcbf3667b295f299ce76)
 
 3. State
-   - Goal 1 - Add button on expense list and try to change title
+   - Goal - Add button on expense list and try to change title
    - If you just update the title var inside component nothing will happen
-   - TRY - [Changing title]()
+   - Demo 1 
+     - [Changing title](https://github.com/sanketjo96/react-training/commit/22ea8c533f94a33b09a0ae90c8c5f074d72f926b)
+   - So react ignores further updates to normal props vars post render
+   - Which is why state comes in picture where when state vars changes react considers re-render
+   - Demo 2
+     - Observe useState hook
 
 4. Styling components
    - Condition styling
