@@ -78,8 +78,15 @@
       - Demo
         - Adding Expense static item, adding it to app.js
         - Applying styles
-        - [Simple Component]() 
-
+        - [Simple Component](https://github.com/sanketjo96/react-training/commit/ad6b9d08b177928d4cfb8882be0cc7517ae39530)
+    - Passing data to component
+      - In order to make component reusable we need to pass the data to it
+      - It should accept any data and render accordingly
+      - React allows us to pass the data wih props (component cant just use data stored in other components)
+      - Demo
+        - Passing data to ExpenseItem via props
+        - Splitting sub component to indicate date
+        - [Props and component splitting](https://github.com/sanketjo96/react-training/commit/ad6b9d08b177928d4cfb8882be0cc7517ae39530)
 
 3. Styling components
    - Condition styling
