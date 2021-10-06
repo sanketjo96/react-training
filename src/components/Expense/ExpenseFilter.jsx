@@ -9,7 +9,7 @@ const ExpensesFilter = ({ filterByYear, filterByYearHandler }) => {
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
-        <select onSelect={filterByYearHandler} defaultValue={filterByYear}>
+        <select onChange={filterByYearHandler} defaultValue={filterByYear}>
           {YEAR_DATA.map((year) => {
             return (
               <option

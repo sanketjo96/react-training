@@ -140,7 +140,10 @@
      -  Observe the warning
      -  [List Render](https://github.com/sanketjo96/react-training/commit/7a70a33a232db40529ccc5817d6dba424fb18927)
   -  Demo 2
-     -  [Solution]()
+     -  [Solution](https://github.com/sanketjo96/react-training/commit/22bbef157f207fbea5321755f883c96d61dfcef9)
+  -  Exercise
+     -  Make the filter functional
+     -  [Code](https://github.com/sanketjo96/react-training/commit/8293bcbb726f184b506a05fe02a8a7fcc0c776fd)
 
 6. Styling components
    - Condition styling

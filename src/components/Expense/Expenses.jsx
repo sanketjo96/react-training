@@ -32,23 +32,27 @@ const Expenses = (props) => {
        *      - It creates new item at last of the structure
        *      - It go through all divs and make sure to reflect div contents correctly
        *      - Not very optimized ahhh ? mehhh...
-       * 
+       *
        * 6. Keys
        *      - If we add unique key to every item, react does this in optimized way
        *      - Adding id ensures that react can now identify list item uniquely by just comparing these IDs to
        *        what it render previously
        */}
       <Card className="expenses">
-        {expenses.map((expense) => {
-          return (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          );
-        })}
+        {expenses
+          .filter((expense) => {
+            return expense.date.getFullYear().toString() === filterByYear
+          })
+          .map((expense) => {
+            return (
+              <ExpenseItem
+                key={expense.id}
+                title={expense.title}
+                amount={expense.amount}
+                date={expense.date}
+              />
+            );
+          })}
       </Card>
     </>
   );
