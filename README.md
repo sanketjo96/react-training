@@ -133,7 +133,14 @@
    - Ignore list rendering for now
    - [Code](https://github.com/sanketjo96/react-training/commit/8bb10db5e4ba4fdcbee16b5a12fe36a8e35574be)
 
-5. Rendering lists 
+5. Rendering lists
+   - Render expense list programmatically using map
+   - Demo 1
+     -  Observe the map usage
+     -  Observe the warning
+     -  [List Render](https://github.com/sanketjo96/react-training/commit/7a70a33a232db40529ccc5817d6dba424fb18927)
+  -  Demo 2
+     -  [Solution]()
 
 6. Styling components
    - Condition styling
