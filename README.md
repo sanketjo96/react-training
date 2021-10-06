@@ -109,9 +109,18 @@
      - Observe useState hook
      - Observe setTitle to set state
      - Setting state is more of a scheduling an update and not setting it in sync, one should use call back way
+     - [State Update](https://github.com/sanketjo96/react-training/commit/9fb8a88026771ab3cfdcbd6e515b0d880bbbeafd)
    - State initializes once and whenever we set new state, reacts preserves the latest state change and triggers re-render accordingly
+   - You can use multiple state hooks and reacts to those updates independently
    - State can get update on user events, on side effects (component mount) or even on timers
    - Demo 3
+     - Since state sync is async in react be careful while setting new state which is dependant on old state
+     - Note callback function
+   - Demo 4
+     - Try adding new Form component which can gather title, price and date with multiple states
+     - Note how we are listening to user events
+     - Note controlled components or 2 way binding
+     - Note the form submit and passing data up to the parent.
 
 4. Styling components
    - Condition styling
