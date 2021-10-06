@@ -125,10 +125,15 @@
    - Exercise
      - Add filter component in expense component
      - Create state at expense level to store the selected data
+     - [Code](https://github.com/sanketjo96/react-training/commit/8293bcbb726f184b506a05fe02a8a7fcc0c776fd)
 
-4. Rendering lists 
+4. Quick guide for project structure
+   - Keep UI component separate
+   - Keep similar Business component together 
 
-5. Styling components
+5. Rendering lists 
+
+6. Styling components
    - Condition styling
      - Setting styles inline with the help of style object. (not fan of inline styles ??)
      - Apply classes conditionally. Checkout classNames package to do this easily 

@@ -1,8 +1,8 @@
-import "./Expenses.css";
-import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
-import ExpensesFilter from "./ExpenseFilter";
 import { useState } from "react";
+import Card from "../UI/Card";
+import ExpenseItem from "./ExpenseItem";
+import "./Expenses.css";
+import ExpensesFilter from "./ExpenseFilter";
 
 const Expenses = (props) => {
   const expenses = props.expenses;
