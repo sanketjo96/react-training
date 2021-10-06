@@ -6,17 +6,20 @@ import { useState } from 'react';
 const ExpenseItem = (props) => {
     let {title, amount, date} = props
 
+    /**
+     * Usage of in built state hook
+     */
     const [titleText, setTitle] = useState(title)
 
-    const handleClick = () => {
-      // Trying to update title on event
-      console.log('clicked')
-      
+    const handleClick = () => {      
       /**
        * This is where we are updating state variable
        * which will trigger re-render
        */
       setTitle('sanket')
+
+      // Notice output here
+      console.log(title)
     }
 
     return (

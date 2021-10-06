@@ -107,6 +107,11 @@
    - Which is why state comes in picture where when state vars changes react considers re-render
    - Demo 2
      - Observe useState hook
+     - Observe setTitle to set state
+     - Setting state is more of a scheduling an update and not setting it in sync, one should use call back way
+   - State initializes once and whenever we set new state, reacts preserves the latest state change and triggers re-render accordingly
+   - State can get update on user events, on side effects (component mount) or even on timers
+   - Demo 3
 
 4. Styling components
    - Condition styling
