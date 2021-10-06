@@ -121,8 +121,14 @@
      - Note how we are listening to user events
      - Note controlled components or 2 way binding
      - Note the form submit and passing data up to the parent.
+     - [Lifting state up](https://github.com/sanketjo96/react-training/commit/019a7684f99153763ee7c856be9f6498a15eec48)
+   - Exercise
+     - Add filter component in expense component
+     - Create state at expense level to store the selected data
 
-4. Styling components
+4. Rendering lists 
+
+5. Styling components
    - Condition styling
      - Setting styles inline with the help of style object. (not fan of inline styles ??)
      - Apply classes conditionally. Checkout classNames package to do this easily 
