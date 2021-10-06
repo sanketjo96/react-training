@@ -143,9 +143,13 @@
      -  [Solution](https://github.com/sanketjo96/react-training/commit/22bbef157f207fbea5321755f883c96d61dfcef9)
   -  Exercise
      -  Make the filter functional
-     -  [Code](https://github.com/sanketjo96/react-training/commit/8293bcbb726f184b506a05fe02a8a7fcc0c776fd)
+     -  [Code](https://github.com/sanketjo96/react-training/commit/0a317abc2dd82f319c104b1ce15c1b4ea84bd8b1)
 
 6. Styling components
+   - Dynamic styling
+     - Demo 1
+       - Add chart component
+       - Note how we are adding dynamic style rules for ChartBar.jsx
    - Condition styling
      - Setting styles inline with the help of style object. (not fan of inline styles ??)
      - Apply classes conditionally. Checkout classNames package to do this easily 

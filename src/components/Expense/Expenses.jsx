@@ -3,11 +3,15 @@ import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 import ExpensesFilter from "./ExpenseFilter";
+import ExpenseChart from "./ExpenseChart";
 
 const Expenses = (props) => {
   const expenses = props.expenses;
   const [filterByYear, setFilterByYear] = useState("2021");
 
+  const filteredExpenses = expenses.filter((expense) => {
+    return expense.date.getFullYear().toString() === filterByYear;
+  });
   const handleFilterByYear = (event) => {
     setFilterByYear(event.target.value);
   };
@@ -19,6 +23,7 @@ const Expenses = (props) => {
           filterByYear={filterByYear}
           filterByYearHandler={handleFilterByYear}
         ></ExpensesFilter>
+        <ExpenseChart expenses={filteredExpenses}></ExpenseChart>
       </Card>
       {/**
        * Note how we used JS map to evaluate markup
@@ -39,20 +44,16 @@ const Expenses = (props) => {
        *        what it render previously
        */}
       <Card className="expenses">
-        {expenses
-          .filter((expense) => {
-            return expense.date.getFullYear().toString() === filterByYear
-          })
-          .map((expense) => {
-            return (
-              <ExpenseItem
-                key={expense.id}
-                title={expense.title}
-                amount={expense.amount}
-                date={expense.date}
-              />
-            );
-          })}
+        {filteredExpenses.map((expense) => {
+          return (
+            <ExpenseItem
+              key={expense.id}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          );
+        })}
       </Card>
     </>
   );
