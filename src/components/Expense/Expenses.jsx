@@ -20,28 +20,29 @@ const Expenses = (props) => {
           filterByYearHandler={handleFilterByYear}
         ></ExpensesFilter>
       </Card>
-
+      {/**
+       * Note how we used JS map to evaluate markup
+       * 1. Open the inspector tool and observe warning
+       * 2. Go to elements > inspect list of expenses
+       * 3. Try adding new item > Note that last item is flashing (as it got created recently)
+       * 4. Again add new item > Note the internals of 1st expense item div > This should also flash
+       * 5. How react thinks ?
+       *      - Once new item added list size got changed
+       *      - React dont know which item added recently
+       *      - It creates new item at last of the structure
+       *      - It go through all divs and make sure to reflect div contents correctly
+       *      - Not very optimized ahhh ? mehhh...
+       */}
       <Card className="expenses">
-        <ExpenseItem
-          title={expenses[0].title}
-          amount={expenses[0].amount}
-          date={expenses[0].date}
-        />
-        <ExpenseItem
-          title={expenses[1].title}
-          amount={expenses[1].amount}
-          date={expenses[1].date}
-        />
-        <ExpenseItem
-          title={expenses[2].title}
-          amount={expenses[2].amount}
-          date={expenses[2].date}
-        />
-        <ExpenseItem
-          title={expenses[3].title}
-          amount={expenses[3].amount}
-          date={expenses[3].date}
-        />
+        {expenses.map((expense) => {
+          return (
+            <ExpenseItem
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          );
+        })}
       </Card>
     </>
   );

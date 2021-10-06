@@ -129,7 +129,9 @@
 
 4. Quick guide for project structure
    - Keep UI component separate
-   - Keep similar Business component together 
+   - Keep similar Business component together
+   - Ignore list rendering for now
+   - [Code](https://github.com/sanketjo96/react-training/commit/8bb10db5e4ba4fdcbee16b5a12fe36a8e35574be)
 
 5. Rendering lists 
 
