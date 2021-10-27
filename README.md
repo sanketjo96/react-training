@@ -190,3 +190,9 @@
         - Rename css file style.module.css
         - Module in a name is signal to CRA build process for transformation
         - CRA css module help can be found [here](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+
+7. Effects, Reducer and contexts
+  - Effects
+    - Suppose we need to hit network request which fetch data related to component
+    - The network call is unrelated with the react rendering but its a side execution or effect we would need.
+    - Cases which we need to execute which are not directly related to component lifecycle can be termed as effect 
