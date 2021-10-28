@@ -192,7 +192,9 @@
         - CRA css module help can be found [here](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
 
 7. Effects, Reducer and contexts
-  - Effects
+  - Effects (B -  04-effects-reducer-context)
     - Suppose we need to hit network request which fetch data related to component
     - The network call is unrelated with the react rendering but its a side execution or effect we would need.
-    - Cases which we need to execute which are not directly related to component lifecycle can be termed as effect 
+    - Cases which we need to execute which are not directly related to component lifecycle can be termed as effect
+    - Demo1 - effect without args [here](https://github.com/sanketjo96/react-training/commit/a5be8f1f39c4132d06dd7edb0a6ce168902520a9) 
+    - Demo2 - effect with params
