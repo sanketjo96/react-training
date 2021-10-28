@@ -197,4 +197,5 @@
     - The network call is unrelated with the react rendering but its a side execution or effect we would need.
     - Cases which we need to execute which are not directly related to component lifecycle can be termed as effect
     - Demo1 - effect without args [here](https://github.com/sanketjo96/react-training/commit/a5be8f1f39c4132d06dd7edb0a6ce168902520a9) 
-    - Demo2 - effect with params
+    - Demo2 - effect with params [here](https://github.com/sanketjo96/react-training/commit/0929b91da2c012556070d186974535a9a4ff1db7)
+    - Demo3 - cleanup
