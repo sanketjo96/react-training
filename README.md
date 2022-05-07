@@ -1,6 +1,6 @@
 ## Modern Javascript Touchbase
 
-# Steps to run the code
+- Steps to run the code
     - Pull the git repo to required machine
     - Make sure you are running some local server which is good enough to serve index.html
     - If you are using vscode then install live serevr
